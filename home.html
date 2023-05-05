@@ -1,0 +1,94 @@
+<html>
+<div id="loader" class="center"></div>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Gym Equipment | Home</title>
+</head>
+<body bgcolor="silver">
+<center><h1><u> Sport Equipment Store </u></h1></center>
+<center><div><center>
+<img src="1.jpeg" width="100px" height="100px">
+<h5>Multi Fitness Equipment</h5>
+<center><button class="button" onClick="btnFun()"> Buy Now </button>
+</center></div>
+<div><center>
+<img src="2.jpg" width="100px" height="100px">
+<h5>Trademale Equipment </h5>
+<center><button class="button" onClick="btnFun()"> Buy Now </button>
+</center></div>
+<div><center>
+<img src="3.jpg" width="100px" height="100px">
+<h5>Multiple Dumbles Equipment </h5>
+<center><button class="button" onClick="btnFun()"> Buy Now </button>
+</center></div>
+<div><center>
+<img src="4.jpeg" width="100px" height="100px">
+<h5>Hand weight Equipment</h5>
+<center><button class="button" onClick="btnFun()"> Buy Now </button>
+</center></div>
+<div><center>
+<img src="5.jpg" width="100px" height="100px">
+<h5>Flat Bar Equipment</h5>
+<center><button class="button" onClick="btnFun()"> Buy Now </button>
+</center></div>
+<center><div><center>
+<img src="6.jpg" width="100px" height="100px">
+<h5>Multi Funcitional Device Equipment</h5>
+<center><button class="button" onClick="btnFun()"> Buy Now </button>
+</center></div>
+<div><center>
+<img src="7.jpeg" width="100px" height="100px">
+<h5>Single dumble Equipment</h5>
+<center><button class="button" onClick="btnFun()"> Buy Now </button>
+</center></div>
+<div><center>
+<img src="8.jpg" width="100px" height="100px">
+<h5>Back Training Equipment</h5>
+<center><button class="button" onClick="btnFun()"> Buy Now </button>
+</center></div>
+<div><center>
+<img src="9.jpeg" width="100px" height="100px">
+<h5>Pull Back Device Equipment</h5>
+<center><button class="button" onClick="btnFun()"> Buy Now </button>
+</center></div>
+<div><center>
+<img src="10.jpg" width="100px" height="100px">
+<h5>Pull Hands Wire Equipment</h5>
+<center><button class="button" onClick="btnFun()"> Buy Now </button>
+</center></div>
+<center><h1> Contact Us </h1></center>
+<div>
+  <form>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+	<input type="text" id="num" name="number" placeholder="Your phone number..">
+    <input class="button" value="Send" onClick="btnFun()">
+  </form>
+</div>
+<script>
+    document.onreadystatechange = function() {
+        if (document.readyState !== "complete") {
+            document.querySelector(
+            "body").style.visibility = "hidden";
+            document.querySelector(
+            "#loader").style.visibility = "visible";
+        } else {
+            document.querySelector(
+            "#loader").style.display = "none";
+            document.querySelector(
+            "body").style.visibility = "visible";
+        }
+    };
+	
+function btnFun() {
+  var txt;
+  if (confirm("Are you sure?")) {
+    txt = "Done ! , we will contact you as soon as";
+  } else {
+    txt = "Request has been cancelled.";
+  }
+  alert(txt);
+}
+</script>
+ </body>
+</html>
